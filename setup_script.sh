@@ -11,13 +11,6 @@ wget -P ~/Downloads/ https://repo.continuum.io/archive/${anaconda}
 # install anaconda - accept default options except yes to prepend anaconda path to PATH
 bash ~/Downloads/${anaconda}
 
-# MINICONDA
-# download Miniconda linux version (link from page https://www.continuum.io/downloads)
-miniconda="Miniconda3-4.3.14-MacOSX-x86_64.sh" # update if necessary
-wget -P ~/Downloads/ https://repo.continuum.io/miniconda/${miniconda}
-# install miniconda - accept default options except yes to prepend anaconda path to PATH
-bash ~/Downloads/${miniconda}
-
 # run .bashrc to update path
 source ~/.bashrc
 
