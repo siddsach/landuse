@@ -14,11 +14,18 @@ bash ~/Downloads/${miniconda}
 # run .bashrc to update path
 source ~/.bashrc
 
+conda install mamba -n base -c conda-forge
+
+/home/siddharthsachdeva/miniconda3/bin/mamba init
+
 # update python packages - using conda - example
-conda install -y conda jupyter jupyter_client jupyter_console jupyter_core \
-                ipython scipy numpy matplotlib pandas
+
+mamba install -y -c conda-forge gdal=3.3.1
 
 sudo apt-get install gcc
 sudo apt-get install --reinstall build-essential
 
 pip install natcap.invest==3.9.1
+
+mamba install -y conda jupyter jupyter_client jupyter_console jupyter_core \
+                ipython scipy numpy matplotlib pandas
