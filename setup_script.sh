@@ -17,3 +17,8 @@ source ~/.bashrc
 # update python packages - using conda - example
 conda install -y conda jupyter jupyter_client jupyter_console jupyter_core \
                 ipython scipy numpy matplotlib pandas
+
+sudo apt-get install gcc
+sudo apt-get install --reinstall build-essential
+
+pip install natcap.invest==3.9.1
